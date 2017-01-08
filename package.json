@@ -2,16 +2,16 @@
   "name": "sam1lam4",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "lint": "eslint .",
     "lint-fix": "eslint . --fix",
     "test": "./node_modules/.bin/mocha es5/**/spec.js"
   },
+  "main": "./common.js",
   "bin": {
     "samlam": "./cli.js"
   },
-  "author": "",
+  "author": "Ignacio Carbajo <icarbajop@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "chai": "^3.5.0",
