@@ -1,6 +1,6 @@
 {
   "name": "sam1lam4",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "scripts": {
     "lint": "eslint .",
@@ -9,7 +9,7 @@
   },
   "main": "./common.js",
   "bin": {
-    "samlam": "./cli.js"
+    "sam1lam4": "./cli.js"
   },
   "author": "Ignacio Carbajo <icarbajop@gmail.com>",
   "license": "MIT",
