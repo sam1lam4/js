@@ -6,11 +6,11 @@ Collection of tools to use with ASTs (Abstract Syntax Trees), in order to extrac
 
 ## Usage
 
-This is still in an initial stage, so please expect the API of the package and the cli to be updated with breaking changes. Currently it requires Node v6. Soon it will include an autocompletion script to suggest the existing scripts, although you can also create custom scripts.
+This is still in an initial stage, so please expect the API of the package and the cli to be updated with breaking changes. Currently it requires Node v6 or above. Run `sam1lam4 --help` to get started.
 
 ## Autocompletion
 
-Add this to your `.bashrc`, `.bash_profile` or similar:
+It will autocomplete the action with the relative files and with the builtin actions that come with the package. To use it, add this to your `.bashrc`, `.bash_profile` or similar:
 ```sh
 eval "$(sam1lam4 _get_bash_completion)"
 ```
