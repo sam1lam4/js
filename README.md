@@ -10,7 +10,10 @@ This is still in an initial stage, so please expect the API of the package and t
 
 ## Autocompletion
 
-Add this to you `.bashrc`: `eval "$(sam1lam4 _get_bash_completion)";`
+Add this to your `.bashrc`, `.bash_profile` or similar:
+```sh
+eval "$(sam1lam4 _get_bash_completion)"
+```
 
 ## License
 
