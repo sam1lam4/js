@@ -4,10 +4,22 @@ const fs = require("fs")
 const program = require("commander")
 
 const {version} = require("./package.json")
+const {
+  COMPLETION_CMD,
+  logCompletionScript,
+} = require("./completion")
 
 function main(action, filePath) {
   const fileContent = fs.readFileSync(filePath, "utf8")
-  const fn = require(`./${action}`) // eslint-disable-line global-require
+  let fn
+
+  // try to require relative to cwd, and then relative to this file
+  try {
+    fn = require(`${process.cwd()}/${action}`) // eslint-disable-line global-require
+  } catch (e) {
+    fn = require(`./${action}`) // eslint-disable-line global-require
+  }
+
   const result = fn(fileContent)
 
   if (program.replace) {
@@ -42,5 +54,11 @@ program.on("--help", () => {
   console.log("")
 })
 
+const args = process.argv
 
-program.parse(process.argv)
+if (args.length > 2 && args[2] === COMPLETION_CMD) {
+  logCompletionScript()
+} else {
+  program.parse(args)
+}
+

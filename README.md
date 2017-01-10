@@ -8,6 +8,10 @@ Collection of tools to use with ASTs (Abstract Syntax Trees), in order to extrac
 
 This is still in an initial stage, so please expect the API of the package and the cli to be updated with breaking changes. Currently it requires Node v6. Soon it will include an autocompletion script to suggest the existing scripts, although you can also create custom scripts.
 
+## Autocompletion
+
+Add this to you `.bashrc`: `eval "$(sam1lam4 _get_bash_completion)";`
+
 ## License
 
 MIT - Ignacio Carbajo 2017

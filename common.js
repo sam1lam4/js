@@ -47,6 +47,7 @@ module.exports.traverseStr = function(str, fn) {
 module.exports.types = {
   CALL_EXPRESSION: "CallExpression",
   EXPRESSION_STATEMENT: "ExpressionStatement",
+  FUNCTION_EXPRESSION: "FunctionExpression",
   IDENTIFIER: "Identifier",
   LITERAL: "Literal",
   MEMBER_EXPRESSION: "MemberExpression",
