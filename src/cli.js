@@ -53,7 +53,7 @@ program
 program.on("--help", () => {
   console.log("  Examples:")
   console.log("")
-  console.log("    $ find src -name '*.js' -type f | xargs -I {} sam1lam4 -is es5/remove-console {}")
+  console.log("    $ find src -name '*.js' -type f | xargs -I {} sam1lam4 -rs es5/remove-console {}")
   console.log("    $ sam1lam4 es5/lines-where-property-is-accessed -a foo index.js | grep -v '^>>>'")
   console.log("")
 })
