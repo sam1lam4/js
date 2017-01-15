@@ -66,4 +66,9 @@ module.exports.getConstructor = (item) => {
   return null
 }
 
+module.exports.exitWithError = (message) => {
+  console.log(message)
+  process.exit(1)
+}
+
 module.exports.isArray = isArray

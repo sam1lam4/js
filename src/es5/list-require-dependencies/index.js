@@ -1,4 +1,4 @@
-const {traverseStr, types, isArray} = require("../../common")
+const {traverseStr, types, isArray} = require("../..")
 
 module.exports = function(str) {
   const dependencies = []

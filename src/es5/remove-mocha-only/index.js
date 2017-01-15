@@ -1,4 +1,4 @@
-const {traverseAST, types} = require("../../common")
+const {traverseAST, types} = require("../..")
 
 const recast = require("recast")
 

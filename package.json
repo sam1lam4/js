@@ -1,15 +1,15 @@
 {
   "name": "sam1lam4",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "",
   "scripts": {
-    "lint": "eslint .",
-    "lint-fix": "eslint . --fix",
-    "test": "./node_modules/.bin/mocha es5/**/spec.js"
+    "lint": "eslint src",
+    "lint-fix": "eslint src --fix",
+    "test": "./node_modules/.bin/mocha src/**/spec.js"
   },
-  "main": "./common.js",
+  "main": "./src/index.js",
   "bin": {
-    "sam1lam4": "./cli.js"
+    "sam1lam4": "./src/cli.js"
   },
   "author": "Ignacio Carbajo <icarbajop@gmail.com>",
   "license": "MIT",

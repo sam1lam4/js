@@ -1,4 +1,4 @@
-const {traverseStr, types, constructors, getConstructor} = require("../../common")
+const {traverseStr, types, constructors, getConstructor} = require("../..")
 
 let lines
 

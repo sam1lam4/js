@@ -1,6 +1,7 @@
 function logCompletionScript() {
   const script = `
 _get_sam1lam4_completion()  {
+  compopt +o default
   COMPREPLY=()
   cur="\${COMP_WORDS[COMP_CWORD]}"
   prev="\${COMP_WORDS[COMP_CWORD-1]}"
@@ -17,7 +18,8 @@ _get_sam1lam4_completion()  {
   fi
 
   # default
-  COMPREPLY=( $(compgen -f \${cur}) )
+  compopt -o default
+  COMPREPLY=()
   return 0
 }
 
